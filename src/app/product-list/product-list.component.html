@@ -1,0 +1,15 @@
+<h2><b>Buy electronic gadgets</b></h2>
+<div *ngFor="let product of products;index as productId">
+	<h3>
+		<p *ngIf="product.score>4.0 ">
+		<a [title]="product.title + 'details'"[routerLink]="['/products', productId]">
+			{{product.title}}
+		</a>
+		</p>
+	</h3>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
