@@ -1,0 +1,11 @@
+
+<p>bluetooth speakers</p>
+<div *ngIf="product">
+    <h2>{{product.title}} {{product.reviewCount}} reviews</h2>
+  <img src="{{product.image}}" height="400"  width="600px"  padding="padding: 25px 50px 75px 100px" >
+<h2>{{product.price|currency}}</h2>
+<button type="button" (click)="addToCart(product)" class="btn btn-primary">
+    Buy
+  </button>
+  <!-- <button type="button" class="btn btn-success">Success</button> -->
+</div>
